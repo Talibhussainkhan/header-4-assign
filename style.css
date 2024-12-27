@@ -1,0 +1,119 @@
+@font-face {
+    font-family: "roboto";
+    src: url(../../../Roboto/Roboto-Regular.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "roboto";  
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.page1{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right,#FFF1C1,#FFFBEB,#FFFFFF);
+}
+nav{
+    height: 75px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.list-nav{
+    display: flex;
+    justify-content: space-evenly;
+    flex: 0.5;
+    gap: 25px;
+    align-items: center;
+    
+}
+.list-nav ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    padding-right: 30px;
+}
+.list-nav ul li{
+    &:hover{
+        text-decoration: underline;
+     }
+     cursor: pointer;
+   }
+   .btn{
+    padding-right: 25px;
+   }
+
+.btn >button{
+    width: 140px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background: linear-gradient(to right,rgba(255, 226, 89, 1),rgba(255, 167, 81, 1));
+    cursor: pointer;
+    &:hover{
+        opacity: 0.8;
+    }
+    color: white;
+    
+}
+.logo{
+    display: flex;
+    gap: 10px;
+    padding-left: 10px;
+}
+.logo i{
+    font-size: 18px;
+    cursor: pointer;
+}
+.contect{
+    width: 100%;
+    height: 90vh;    
+    display: flex;
+    align-items: center;
+}
+.page1-img{
+    align-items: center;
+    height: 80vh;
+    display: flex;
+    justify-content: flex-end;
+}
+.page1-contect{
+    width: 50%;
+    height: 50vh;
+    /* padding: 0 10vw; */
+    padding-left: 10vw;
+}
+.page1-contect h1{
+    font-size: 52px;
+    position: relative;
+    line-height: 60px;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+.page1-contect p{
+    margin-top: 25px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+
+}
+.page1-contect button{
+    width: 200px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    background: linear-gradient(to right,rgba(255, 78, 80, 1),rgba(249, 212, 35, 1));
+    color: white;
+    margin-top: 50px;
+    cursor: pointer;
+    &:hover{
+        opacity: 0.8;
+    }
+}
